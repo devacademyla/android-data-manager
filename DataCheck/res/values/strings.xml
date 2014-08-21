@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Data Check</string>
+    <string name="hello_world">4.5</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_ayuda">Acerca de</string>
+    <string name="action_config">Configuracion</string>
+    <string name="title_activity_ayuda">AyudaActivity</string>
+    <string name="title_activity_config">ConfigActivity</string>
+    <string name="label_plan">Plan de Datos (MB):</string>
+    <string name="label_uso">Uso Anterior de Datos (MB):</string>
+    <string name="label_inicio">Dia de inicio del Plan:</string>
+    <string name="label_notificar50">Notificar al 50% del consumo:</string>
+    <string name="label_boton">Guardar</string>
+
+</resources>
