@@ -6,9 +6,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pe.com.iluminatic.datacheck.MainDataActivity$PlaceholderFragment" >
+    tools:context="pe.com.iluminatic.datacheck.MainDataActivity$PlaceholderFragment" 
+    android:background="#6BD600">
 
     <TextView
+        android:id="@+id/txtConsumo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -17,5 +19,27 @@
         android:textColor="#FFFFFF"
         android:textSize="60sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtConsumo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@+id/txtConsumo"
+        android:text="@string/etiqueta_percent" 
+         android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/txtUso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtConsumo"
+        android:layout_alignBottom="@+id/txtConsumo"
+        android:textColor="#FFFFFF"
+        android:layout_alignLeft="@+id/txtPercent"
+        android:text="@string/etiqueta_uso" />
 
 </RelativeLayout>

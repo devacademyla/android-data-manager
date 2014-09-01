@@ -106,5 +106,11 @@ public class BDDataBaseHelper {
 	
 
 	}
+	
+	public void eliminarTabla(){
+		
+		bdOpenHelper.onUpgrade(dataBase, 1,2);
+		
+	}
 
 }

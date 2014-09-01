@@ -13,5 +13,9 @@
     <string name="label_inicio">Dia de inicio del Plan:</string>
     <string name="label_notificar50">Notificar al 50% del consumo:</string>
     <string name="label_boton">Guardar</string>
+    <string name="label_reset">Config. Inicial</string>
+    <string name="etiqueta_percent">%</string>
+    <string name="etiqueta_uso">uso</string>
+    
 
 </resources>

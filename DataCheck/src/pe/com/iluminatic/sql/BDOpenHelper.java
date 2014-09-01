@@ -46,7 +46,7 @@ public class BDOpenHelper extends SQLiteOpenHelper {
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		// TODO Auto-generated method stub
 		
-		//db.execSQL("DROP TABLE IF EXIST "+ DATABASE_TABLE_NAME);
+		db.execSQL("DROP TABLE "+ DATABASE_TABLE_NAME);
 		
 	}
 	

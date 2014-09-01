@@ -2,8 +2,11 @@ package pe.com.iluminatic.datacheck;
 
 import pe.com.iluminatic.modelo.Configuracion;
 import pe.com.iluminatic.sql.BDDataBaseHelper;
+import pe.com.iluminatic.sql.BDOpenHelper;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -112,6 +115,23 @@ public class ConfigActivity extends ActionBarActivity {
 					configuracion.setDiaInicioFacturacion(editDiaInicio.getText().toString());
 					configuracion.setNotificacion50(notificacion50.getText().toString());
 					dbHelper.actualizarConfiguracion(configuracion);
+					
+					
+				}
+			});
+			
+			Button btnConfigInicial = (Button) rootView.findViewById(R.id.btnConfigInicial);
+			
+			btnConfigInicial.setOnClickListener(new OnClickListener() {
+				
+				
+				
+				@Override
+				public void onClick(View v) {
+
+					dbHelper.eliminarTabla();
+					Intent intent = new Intent(v.getContext(), MainDataActivity.class);
+					v.getContext().startActivity(intent);
 					
 					
 				}
