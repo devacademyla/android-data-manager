@@ -115,7 +115,8 @@ public class ConfigActivity extends ActionBarActivity {
 					configuracion.setDiaInicioFacturacion(editDiaInicio.getText().toString());
 					configuracion.setNotificacion50(notificacion50.getText().toString());
 					dbHelper.actualizarConfiguracion(configuracion);
-					
+					Intent intent = new Intent(v.getContext(), MainDataActivity.class);
+					v.getContext().startActivity(intent);
 					
 				}
 			});
@@ -129,7 +130,8 @@ public class ConfigActivity extends ActionBarActivity {
 				@Override
 				public void onClick(View v) {
 
-					dbHelper.eliminarTabla();
+					//dbHelper.eliminarTabla();
+					v.getContext().deleteDatabase("BD.DATACHECK");
 					Intent intent = new Intent(v.getContext(), MainDataActivity.class);
 					v.getContext().startActivity(intent);
 					

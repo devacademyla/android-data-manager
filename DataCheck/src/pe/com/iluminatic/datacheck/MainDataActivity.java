@@ -130,7 +130,7 @@ public class MainDataActivity extends ActionBarActivity {
 					config.getPlanMb())));
 
 			}else{
-				
+				//deleteDatabase(DATABASE_NAME);
 				txtConsumo.setText("0");
 	
 				
